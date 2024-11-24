@@ -1,0 +1,101 @@
+/* Allgemeine Einstellungen */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hauptcontainer und zentrierte Ausrichtung */
+main {
+    width: 60%;
+    text-align: center;
+}
+
+/* Titel und Untertitel */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffddc1;
+}
+
+.title {
+    font-family: 'Georgia', serif;
+    font-size: 3em;
+    font-weight: bold;
+    color: #4b2e2e;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.subtitle {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2em;
+    font-style: italic;
+    color: #7a4e4e;
+    margin-top: 5px;
+}
+
+/* Menü-Kategorien mit Linien */
+.menu-category-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.menu-category-line {
+    flex: 1;
+    height: 2px;
+    background-color: #4b2e2e;
+}
+
+.menu-category {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #4b2e2e;
+    margin: 0 10px; /* Abstand zwischen Linie und Text */
+}
+
+/* Menü-Liste */
+.menu-list {
+    list-style-type: none; /* Entfernt die Standard-Punkte */
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Für die korrekte Ausrichtung der benutzerdefinierten Punkte */
+}
+
+.menu-list li {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 20px; /* Platz für den Punkt */
+}
+
+/* Benutzerdefinierte Punkte */
+.menu-list li::before {
+    content: "•"; /* Setzt einen benutzerdefinierten Punkt */
+    position: absolute;
+    left: 0; /* Platziert den Punkt links vom Text */
+    color: #333; /* Farbe des Punktes */
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+/* Menü-Item */
+.menu-item {
+    font-weight: bold;
+    color: #333;
+    text-decoration: underline dotted;
+    font-size: 1.2em;
+}
+
+.menu-list li:hover .menu-item {
+    color: #ff5733;
+    text-decoration: line-through;
+}
